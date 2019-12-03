@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LuckyCharms</string>
+
+    <!-- choose page -->
+    <string name="choose_page_title">Pick your lucky charms</string>
+    <string name="choose_page_confirm_btn">Confirm your choices!</string>
+
+    <!-- charm page -->
+    <string name="charm_page_title">My lucky charms</string>
+</resources>

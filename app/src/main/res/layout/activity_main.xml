@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".ui.pickcharm.PickCharmsActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/bg"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="@string/choose_page_title"
+        app:titleTextColor="@color/font_color" />
+
+    <LinearLayout
+        android:id="@+id/galleryLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/confirm_button"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="48dp"
+        android:layout_centerInParent="true"
+        android:background="@color/bg"
+        android:orientation="vertical">
+
+        <com.jizhe7550.myapplication.ui.widget.GravitySnapRecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:snapEnabled="true"
+            app:snapGravity="center"
+            app:snapLastItem="true"
+            app:snapMaxFlingSizeFraction="2"
+            app:snapScrollMsPerInch="50" />
+
+        <com.jizhe7550.myapplication.ui.widget.GravitySnapRecyclerView
+            android:id="@+id/recyclerView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:snapEnabled="true"
+            app:snapGravity="center"
+            app:snapLastItem="true"
+            app:snapMaxFlingSizeFraction="2"
+            app:snapScrollMsPerInch="50" />
+
+        <com.jizhe7550.myapplication.ui.widget.GravitySnapRecyclerView
+            android:id="@+id/recyclerView3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:snapEnabled="true"
+            app:snapGravity="center"
+            app:snapLastItem="true"
+            app:snapMaxFlingSizeFraction="2"
+            app:snapScrollMsPerInch="50" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/button_color"
+        android:text="@string/choose_page_confirm_btn"
+        android:textColor="@color/font_color" />
+
+</RelativeLayout>
